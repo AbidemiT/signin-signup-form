@@ -18,11 +18,8 @@ main {
 }
 
 .container {
-  width: 70%;
-  margin: 100px auto;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
 }
 
 .form-container {
@@ -30,7 +27,6 @@ main {
   text-align: center;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 60vh;
 }
 
 .overlay-container {
@@ -99,4 +95,98 @@ input {
     text-align: center;
     cursor: pointer;
     margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .block {
+    display: none;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  .container {
+    width: 70%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #38ce59;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 60vh;
+  }
+  
+  .overlay-container {
+    background-color: #fff;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 60vh;
+  }
+  
+  form {
+      width: 100%;
+      margin: 50px auto;
+  }
+  
+  form div {
+    margin: 5px;
+    padding: 0;
+  }
+  
+  form button {
+    background-color: #009f5a;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 7px 30px;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  .overlay {
+      width: 100%;
+      margin-top: 100px;
+  }
+  
+  .overlay button {
+    background-color: #38ce59;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 7px 30px;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  input {
+      border: none;
+      background-color: #1d1f1dbe;
+      border-radius: 5px;
+      padding: 8px;
+      width: 20vw;
+      color: #fff;
+      outline: none;
+  }
+  
+  .social-icons {
+      margin: 10px;
+  }
+  .social-icons i {
+      border: 1px solid #fff;
+      padding: 5px;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 5px;
+  }
 }
