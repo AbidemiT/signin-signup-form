@@ -30,12 +30,14 @@
             </div>
             <p>Or use your account</p>
             <div>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" id="username"/>
             </div>
+            <span class="username-warning">Username can't be empty </span>
             <div>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="usernamePassword"/>
             </div>
-            <button>Sign In</button>
+            <span class="password-warning">password length should be greater than 5 </span>
+            <button type="submit" class="signIn">Sign In</button>
           </form>
           <form class="sign-up block">
             <h2>Create Acccount</h2>
