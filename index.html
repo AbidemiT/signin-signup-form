@@ -36,6 +36,7 @@
             <div>
               <input type="password" placeholder="Password" id="usernamePassword"/>
             </div>
+            <div class="check-font"><input type="checkbox"  id="check">Show Password</div>
             <span class="password-warning">password length should be greater than 5 </span>
             <button type="submit" class="signIn">Sign In</button>
           </form>
@@ -48,18 +49,23 @@
                   </div>
                   <p>Or start registration</p>
             <div>
-              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="First Name" id="firstName"/>
             </div>
+            <span class="firstname-warning">First Name can't be empty </span>
             <div>
-              <input type="text" placeholder="Last Name" />
+              <input type="text" placeholder="Last Name" id="lastName"/>
             </div>
+            <span class="lastname-warning">Last Name can't be empty </span>
             <div>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" id="usernameSignUp"/>
             </div>
+            <span class="username-signup-warning">Username can't be empty </span>
             <div>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="passwordSignUp"/>
             </div>
-            <button>Sign Up</button>
+            <span class="password-signup-warning">password length should be greater than 5 </span>
+            <div class="check-font"><input type="checkbox"  id="check-signup">Show Password</div>
+            <button id="userSignUp">Sign Up</button>
           </form>
         </div>
         <div class="overlay-container">
